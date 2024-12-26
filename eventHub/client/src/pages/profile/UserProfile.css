@@ -1,0 +1,172 @@
+/* Genel Konteyner */
+.user-profile-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+}
+
+/* Profil Header */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-button {
+  position: fixed; 
+  left: 0; 
+  top: 50%; 
+   
+  width: 100px; 
+  height: 300px; 
+  background-color: #5a9bd6; 
+  color: white;
+  border: none;
+  border-radius: 0; 
+  font-size: 22px; 
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #4a8bc6; 
+  transform: translateY(-50%) scale(1.1); 
+}
+
+
+
+.profile-header:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #007bff;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-image img:hover {
+  transform: scale(1.05);
+}
+
+.profile-info h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Kullanıcı Etkinlikleri */
+.user-events {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.user-events h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #f1f1f1;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease-in-out;
+}
+
+.event-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.event-thumbnail {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.event-info h3 {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.event-info p {
+  font-size: 1.1rem;
+  color: #777;
+}
+
+/* Yükleniyor Animasyonu */
+.loading {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 50px;
+  color: #007bff;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      opacity: 0.8;
+  }
+  50% {
+      transform: scale(1.1);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 0.8;
+  }
+}
+.event-category {
+  margin-bottom: 30px;
+}
+
+.event-category h2 {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}

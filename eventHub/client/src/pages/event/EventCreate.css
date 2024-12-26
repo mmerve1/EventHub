@@ -1,0 +1,121 @@
+/* Center the container */
+.createbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #d1c4e9, #bbdefb); /* Soft purple to light blue gradient */
+  font-family: 'Poppins', sans-serif; /* Modern font-family */
+}
+
+/* Style for the event creation container */
+.event-create-container {
+  width: 450px;
+  max-width: 450px;
+  padding: 30px;
+  background-color: #ffffff; /* Temiz beyaz arka plan */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Style for the exit button (ÇIKIŞ YAP) */
+.home-button {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  padding: 10px 20px;
+  background-color: #ff1744; /* Red background */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #d50000; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Style for the title */
+.event-create-container h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #6a1b9a; /* Vibrant purple */
+  margin-bottom: 20px;
+}
+
+/* Style for input fields */
+.event-create-container input,
+.event-create-container textarea,
+.event-create-container select,
+.event-create-container button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.event-create-container input:focus,
+.event-create-container textarea:focus,
+.event-create-container select:focus {
+  border-color: #6a1b9a; /* Purple border when focused */
+}
+
+/* Special styles for textarea */
+.event-create-container textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* Style for the error and success messages */
+.error-message,
+.success-message {
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.error-message {
+  background-color: #ff1744; /* Red background for errors */
+}
+
+.success-message {
+  background-color: #00e676; /* Green background for success */
+}
+
+/* Style for the submit button */
+.event-create-container button {
+  background-color: #ff4081; /* Bright pink */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.event-create-container button:hover {
+  background-color: #f50057; /* Darker pink on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .event-create-container {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .event-create-container h2 {
+    font-size: 28px;
+  }
+}

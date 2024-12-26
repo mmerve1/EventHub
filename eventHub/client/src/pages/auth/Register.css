@@ -1,0 +1,139 @@
+/* Register Container */
+.register-container {
+  background-color: #f7f7f7;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 480px;
+  margin: auto;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.register-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.register-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Label */
+.register-form label {
+  display: block;
+  margin: 12px 0 6px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Input Fields */
+.register-form input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.register-form input:focus {
+  border-color: #4A90E2;
+  outline: none;
+}
+
+/* Select Dropdown */
+.register-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.register-form select:focus {
+  border-color: #4A90E2;
+  outline: none;
+}
+
+/* Register Button */
+.register-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #357ABD;
+  transform: translateY(-2px);
+}
+
+/* Error Message */
+.error-message {
+  color: #E74C3C;
+  background-color: #FDECEC;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Login Link */
+.login-link {
+  display: block;
+  text-align: center;
+  color: #4A90E2;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  color: #357ABD;
+  text-decoration: underline;
+}
+
+/* Register Section */
+.register-section p {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .register-container {
+    padding: 20px;
+  }
+
+  .register-title {
+    font-size: 28px;
+  }
+
+  .register-button {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.admin-profile {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h3 {
+  text-align: center;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+button, .home-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover, .home-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-button {
+  display: block;
+  margin: 20px auto;
+  max-width: 200px;
+  text-align: center;
+}
+
+/* Cards */
+.user-card, .event-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.user-card:hover, .event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.user-cards, .event-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.event-card button {
+  margin-top: 10px;
+}
+.approve-button{
+
+  background-color:#8E44AD;
+}
+
+.delete-button{
+  background-color: #7F8C8D;
+}
+.delete-button:hover {
+  background-color: #606565;
+}
+
+/* Category Section */
+.category-section {
+  margin-top: 30px;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.category-section h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.category-section p {
+  text-align: center;
+  font-style: italic;
+}
+
+/* Event Actions */
+.event-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.event-actions button {
+  width: auto;
+  max-width: 150px;
+}
+
+/* Modal */
+.edit-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-modal h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.edit-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.edit-modal input, .edit-modal textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-modal button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 12px 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.edit-modal button:hover {
+  background-color: #45a049;
+}
+
+.edit-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-card, .event-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .event-actions {
+    gap: 15px;
+  }
+
+  .event-actions button {
+    width: 100%;
+  }
+
+  .category-section {
+    margin-top: 15px;
+  }
+}
